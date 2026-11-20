@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Sets the webpage title -->
+    <title>Student Result Checker</title>
+
+</head>
+<body>
+
+<!-- Main heading -->
+<h1>Student Examination Result Checker</h1>
+
+<!-- Student information section -->
+<h2>Enter Student Details</h2>
+
+<!-- Input field for student name -->
+<label>Student Name:</label>
+<input type="text" id="studentName">
+
+<br><br>
+
+<!-- Input field for examination score -->
+<label>Examination Score:</label>
+<input type="number" id="studentScore" min="0" max="100">
+
+<br><br>
+
+<!-- Button to check the student's result -->
+<button onclick="checkResult()">
+    Check Result
+</button>
+
+<!-- Section for displaying student results -->
+<h2>Examination Result</h2>
+
+<!-- Display student name -->
+<p id="nameResult"></p>
+
+<!-- Display examination score -->
+<p id="scoreResult"></p>
+
+<!-- Display grade -->
+<p id="gradeResult"></p>
+
+<!-- Display pass or fail status -->
+<p id="statusResult"></p>
+
+<!-- Display teacher's remark -->
+<p id="remarkResult"></p>
+
+<!-- Display additional message -->
+<p id="messageResult"></p>
+
+<!-- Connect external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

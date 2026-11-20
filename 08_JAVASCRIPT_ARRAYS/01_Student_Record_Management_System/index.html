@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Records Management System</title>
+</head>
+<body>
+
+<!-- Main heading -->
+<h1>Student Records Management System</h1>
+
+<!-- Input for student name -->
+<label for="studentName">Student Name:</label>
+<input type="text" id="studentName">
+
+<br><br>
+
+<!-- Input for student score -->
+<label for="studentScore">Student Score:</label>
+<input type="number" id="studentScore" min="0" max="100">
+
+<br><br>
+
+<!-- Button to add a student -->
+<button onclick="addStudent()">Add Student</button>
+
+<!-- Button to display all students -->
+<button onclick="displayStudents()">Display Students</button>
+
+<!-- Button to calculate average score -->
+<button onclick="calculateAverage()">Calculate Average</button>
+
+<!-- Button to display passed students -->
+<button onclick="displayPassedStudents()">Show Passed Students</button>
+
+<hr>
+
+<!-- Search section -->
+<h2>Search for a Student</h2>
+
+<input type="text" id="searchName" placeholder="Enter student name">
+
+<button onclick="searchStudent()">Search</button>
+
+<p id="searchOutput"></p>
+
+<hr>
+
+<!-- Update score section -->
+<h2>Update Student Score</h2>
+
+<input type="text" id="updateName" placeholder="Student name">
+
+<input type="number" id="newScore" placeholder="New score" min="0" max="100">
+
+<button onclick="updateStudent()">Update Score</button>
+
+<p id="updateOutput"></p>
+
+<hr>
+
+<!-- Remove student section -->
+<h2>Remove Student</h2>
+
+<input type="text" id="removeName" placeholder="Student name">
+
+<button onclick="removeStudent()">Remove Student</button>
+
+<p id="removeOutput"></p>
+
+<hr>
+
+<!-- Display all student records -->
+<h2>Student Records</h2>
+
+<div id="studentOutput"></div>
+
+<!-- Display average score -->
+<h2>Score Summary</h2>
+
+<p id="averageOutput"></p>
+
+<!-- Connect external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

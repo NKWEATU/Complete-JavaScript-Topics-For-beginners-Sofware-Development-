@@ -1,0 +1,92 @@
+/* Style the entire webpage */
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 30px;
+
+    background-color: #f4f4f4;
+}
+
+/* Style the main heading */
+h1 {
+
+    color: darkblue;
+
+    text-align: center;
+}
+
+/* Style all section headings */
+h2 {
+
+    color: darkgreen;
+}
+
+/* Style buttons */
+button {
+
+    padding: 10px 15px;
+
+    margin: 5px;
+
+    border: none;
+
+    background-color: darkblue;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Change button colour when mouse moves over it */
+button:hover {
+
+    background-color: navy;
+}
+
+/* Style input fields */
+input {
+
+    padding: 8px;
+
+    width: 200px;
+}
+
+/* Style student list */
+li {
+
+    background-color: white;
+
+    padding: 10px;
+
+    margin: 5px;
+
+}
+
+/* Special CSS class that JavaScript can add or remove */
+.specialStyle {
+
+    color: white;
+
+    background-color: darkgreen;
+
+    padding: 15px;
+
+    border-radius: 5px;
+}
+
+/* Style message output */
+#messageOutput {
+
+    font-weight: bold;
+
+    color: darkgreen;
+}
+
+/* Style the parent container */
+#parentContainer {
+
+    background-color: lightblue;
+
+    padding: 15px;
+}

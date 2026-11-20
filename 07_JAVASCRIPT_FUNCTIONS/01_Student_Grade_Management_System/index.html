@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Management System</title>
+</head>
+<body>
+
+<!-- Main heading -->
+<h1>Student Grade Management System</h1>
+
+<!-- Student name input -->
+<label for="studentName">Student Name:</label>
+<input type="text" id="studentName">
+
+<br><br>
+
+<!-- First subject score -->
+<label for="score1">Mathematics Score:</label>
+<input type="number" id="score1">
+
+<br><br>
+
+<!-- Second subject score -->
+<label for="score2">English Score:</label>
+<input type="number" id="score2">
+
+<br><br>
+
+<!-- Third subject score -->
+<label for="score3">Computer Score:</label>
+<input type="number" id="score3">
+
+<br><br>
+
+<!-- Button to calculate student result -->
+<button onclick="calculateResult()">
+    Calculate Result
+</button>
+
+<!-- Button to clear the form -->
+<button onclick="clearForm()">
+    Clear Form
+</button>
+
+<!-- Display student result -->
+<h2>Student Result</h2>
+
+<p id="nameOutput"></p>
+<p id="totalOutput"></p>
+<p id="averageOutput"></p>
+<p id="gradeOutput"></p>
+<p id="statusOutput"></p>
+<p id="messageOutput"></p>
+
+<!-- Connect external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+/* Styling the entire webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+/* Section headings */
+h2 {
+    color: darkgreen;
+    margin-top: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: navy;
+}
+
+/* Input fields and dropdown */
+input,
+select {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Mouse event box */
+#mouseBox {
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Result paragraphs */
+p {
+    color: #333;
+}
+
+/* Student buttons */
+.studentButton {
+    background-color: darkgreen;
+}

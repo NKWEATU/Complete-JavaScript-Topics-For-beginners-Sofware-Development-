@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NKC Student Academy</title>
+
+    <!-- Connecting the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================================= -->
+<!-- 1. NAVIGATION BAR -->
+<!-- ================================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">NKC Academy</h2>
+
+        <!-- Mobile navigation button -->
+        <button id="menuButton" class="menu-button"
+                aria-expanded="false">
+            Menu
+        </button>
+
+        <!-- Navigation links -->
+        <ul id="navLinks" class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#courses">Courses</a></li>
+
+            <li><a href="#learningList">My Learning List</a></li>
+
+            <li><a href="#register">Register</a></li>
+
+        </ul>
+
+        <!-- Theme button -->
+        <button id="themeButton">
+            Dark Mode
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ================================= -->
+<!-- 2. HOME SECTION -->
+<!-- ================================= -->
+
+<section id="home" class="hero">
+
+    <h1>Welcome to NKC Student Academy</h1>
+
+    <p>
+        Learn programming and develop practical technology skills.
+    </p>
+
+    <a href="#courses" class="hero-button">
+        Explore Courses
+    </a>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 3. COURSE SECTION -->
+<!-- ================================= -->
+
+<section id="courses" class="section">
+
+    <h2>Our Available Courses</h2>
+
+    <p>Search and select a course you want to learn.</p>
+
+    <!-- Search input -->
+    <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a course..."
+    >
+
+    <!-- Course category filter -->
+    <select id="categoryFilter">
+
+        <option value="All">All Categories</option>
+
+        <option value="Programming">Programming</option>
+
+        <option value="Web Development">Web Development</option>
+
+        <option value="Data">Data</option>
+
+    </select>
+
+    <!-- JavaScript will display course cards here -->
+    <div id="courseGrid" class="course-grid"></div>
+
+    <p id="noCoursesMessage"></p>
+
+    <!-- Course information will appear here -->
+    <div id="courseDetails" class="course-details"></div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 4. MY LEARNING LIST -->
+<!-- ================================= -->
+
+<section id="learningList" class="section">
+
+    <h2>My Learning List</h2>
+
+    <p>
+        Selected Courses:
+        <strong id="courseCount">0</strong>
+    </p>
+
+    <!-- Selected courses will appear here -->
+    <ul id="learningListItems"></ul>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 5. REGISTRATION SECTION -->
+<!-- ================================= -->
+
+<section id="register" class="section">
+
+    <h2>Register for a Course</h2>
+
+    <form id="registrationForm">
+
+        <!-- Student name -->
+        <label for="studentName">Full Name:</label>
+
+        <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your full name"
+        >
+
+        <small id="nameError"></small>
+
+
+        <!-- Student email -->
+        <label for="studentEmail">Email Address:</label>
+
+        <input
+                type="text"
+                id="studentEmail"
+                placeholder="Enter your email"
+        >
+
+        <small id="emailError"></small>
+
+
+        <!-- Course selection -->
+        <label for="selectedCourse">Select Course:</label>
+
+        <select id="selectedCourse">
+
+            <option value="">Choose a course</option>
+
+            <option value="Java Programming">
+                Java Programming
+            </option>
+
+            <option value="Python Programming">
+                Python Programming
+            </option>
+
+            <option value="HTML and CSS">
+                HTML and CSS
+            </option>
+
+            <option value="JavaScript Development">
+                JavaScript Development
+            </option>
+
+            <option value="Data Analysis">
+                Data Analysis
+            </option>
+
+            <option value="React Development">
+                React Development
+            </option>
+
+        </select>
+
+        <small id="courseError"></small>
+
+
+        <button type="submit">
+            Submit Registration
+        </button>
+
+    </form>
+
+    <!-- Registration feedback -->
+    <p id="registrationMessage"></p>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- 6. FOOTER -->
+<!-- ================================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 NKC Student Academy.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- Connecting external JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+</html>

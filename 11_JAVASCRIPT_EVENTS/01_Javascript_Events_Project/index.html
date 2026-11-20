@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Events Project</title>
+
+    <!-- Connecting external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Registration System</h1>
+
+    <p id="message">
+        Welcome! Interact with the elements below.
+    </p>
+
+    <!-- 1. CLICK EVENT -->
+    <h2>1. Click Event</h2>
+
+    <button id="clickButton">
+        Click Me
+    </button>
+
+    <p id="clickResult"></p>
+
+
+    <!-- 2. DOUBLE CLICK EVENT -->
+    <h2>2. Double Click Event</h2>
+
+    <button id="doubleClickButton">
+        Double Click Me
+    </button>
+
+    <p id="doubleClickResult"></p>
+
+
+    <!-- 3. MOUSE EVENTS -->
+    <h2>3. Mouse Events</h2>
+
+    <div id="mouseBox">
+        Move your mouse over this box
+    </div>
+
+
+    <!-- 4. KEYBOARD EVENTS -->
+    <h2>4. Keyboard Events</h2>
+
+    <input
+            type="text"
+            id="keyboardInput"
+            placeholder="Type something here"
+    >
+
+    <p id="keyboardResult"></p>
+
+
+    <!-- 5. INPUT EVENT -->
+    <h2>5. Input Event</h2>
+
+    <input
+            type="text"
+            id="nameInput"
+            placeholder="Enter your name"
+    >
+
+    <p id="nameResult"></p>
+
+
+    <!-- 6. CHANGE EVENT -->
+    <h2>6. Change Event</h2>
+
+    <select id="courseSelect">
+
+        <option value="">Select a course</option>
+
+        <option value="Java Programming">
+            Java Programming
+        </option>
+
+        <option value="Python Programming">
+            Python Programming
+        </option>
+
+        <option value="Web Development">
+            Web Development
+        </option>
+
+        <option value="Data Science">
+            Data Science
+        </option>
+
+    </select>
+
+    <p id="courseResult"></p>
+
+
+    <!-- 7. FOCUS AND BLUR EVENTS -->
+    <h2>7. Focus and Blur Events</h2>
+
+    <input
+            type="text"
+            id="focusInput"
+            placeholder="Click inside this input"
+    >
+
+    <p id="focusResult"></p>
+
+
+    <!-- 8. FORM SUBMIT EVENT -->
+    <h2>8. Form Submit Event</h2>
+
+    <form id="studentForm">
+
+        <input
+                type="text"
+                id="studentName"
+                placeholder="Student Name"
+                required
+        >
+
+        <input
+                type="email"
+                id="studentEmail"
+                placeholder="Student Email"
+                required
+        >
+
+        <button type="submit">
+            Register Student
+        </button>
+
+    </form>
+
+    <p id="formResult"></p>
+
+
+    <!-- 9. EVENT OBJECT -->
+    <h2>9. Event Object</h2>
+
+    <button id="eventObjectButton">
+        Show Event Information
+    </button>
+
+    <p id="eventObjectResult"></p>
+
+
+    <!-- 10. EVENT BUBBLING AND DELEGATION -->
+    <h2>10. Event Bubbling and Delegation</h2>
+
+    <div id="studentList">
+
+        <button class="studentButton">
+            John
+        </button>
+
+        <button class="studentButton">
+            Mary
+        </button>
+
+        <button class="studentButton">
+            Peter
+        </button>
+
+    </div>
+
+    <p id="delegationResult"></p>
+
+
+    <!-- 11. REMOVE EVENT LISTENER -->
+    <h2>11. Remove Event Listener</h2>
+
+    <button id="removeEventButton">
+        Click Before Removing Event
+    </button>
+
+    <button id="stopEventButton">
+        Remove Click Event
+    </button>
+
+    <p id="removeEventResult"></p>
+
+</div>
+
+<!-- Connecting external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

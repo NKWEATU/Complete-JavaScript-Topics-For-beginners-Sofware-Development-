@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Webpage title -->
+    <title>Student DOM Management System</title>
+
+    <!-- Connect external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Main heading -->
+<h1 id="mainHeading">Student DOM Management System</h1>
+
+<!-- Introduction paragraph -->
+<p id="introText">
+    Welcome! Use this system to manage student information.
+</p>
+
+<hr>
+
+<!-- Section for changing webpage content -->
+<h2>1. Change Webpage Content</h2>
+
+<!-- Button to change the heading -->
+<button id="changeHeadingBtn">
+    Change Heading
+</button>
+
+<!-- Button to change paragraph -->
+<button id="changeTextBtn">
+    Change Paragraph
+</button>
+
+<hr>
+
+<!-- Section for changing styles -->
+<h2>2. Change Webpage Styles</h2>
+
+<!-- Button to change heading colour -->
+<button id="changeColorBtn">
+    Change Heading Colour
+</button>
+
+<!-- Button to increase font size -->
+<button id="increaseSizeBtn">
+    Increase Font Size
+</button>
+
+<!-- Button to add or remove a CSS class -->
+<button id="toggleStyleBtn">
+    Toggle Special Style
+</button>
+
+<hr>
+
+<!-- Section for collecting student information -->
+<h2>3. Add Student Information</h2>
+
+<!-- Student name input -->
+<label for="studentName">Student Name:</label>
+<input type="text" id="studentName">
+
+<br><br>
+
+<!-- Student course input -->
+<label for="studentCourse">Student Course:</label>
+<input type="text" id="studentCourse">
+
+<br><br>
+
+<!-- Button to add student -->
+<button id="addStudentBtn">
+    Add Student
+</button>
+
+<hr>
+
+<!-- Section for displaying student records -->
+<h2>4. Registered Students</h2>
+
+<!-- Students will be added here dynamically -->
+<ul id="studentList"></ul>
+
+<hr>
+
+<!-- Section for displaying element selections -->
+<h2>5. DOM Selection Demonstration</h2>
+
+<p class="demoText">This is paragraph one.</p>
+
+<p class="demoText">This is paragraph two.</p>
+
+<p class="demoText">This is paragraph three.</p>
+
+<button id="selectElementsBtn">
+    Select All Paragraphs
+</button>
+
+<hr>
+
+<!-- Section for demonstrating attributes -->
+<h2>6. HTML Attributes</h2>
+
+<!-- Image with an alternative text and source -->
+<img
+        id="studentImage"
+        src="https://placehold.co/200x120"
+        alt="Student placeholder image"
+        width="200"
+>
+
+<br><br>
+
+<button id="changeAttributeBtn">
+    Change Image Attribute
+</button>
+
+<button id="removeAttributeBtn">
+    Remove Image Width
+</button>
+
+<hr>
+
+<!-- Section for displaying DOM traversal -->
+<h2>7. DOM Traversal</h2>
+
+<div id="parentContainer">
+
+    <p id="childParagraph">
+        This is a child paragraph inside the parent container.
+    </p>
+
+    <p>
+        This is another child paragraph.
+    </p>
+
+</div>
+
+<button id="traversalBtn">
+    Show Parent Information
+</button>
+
+<!-- Display messages -->
+<p id="messageOutput"></p>
+
+<!-- Connect external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

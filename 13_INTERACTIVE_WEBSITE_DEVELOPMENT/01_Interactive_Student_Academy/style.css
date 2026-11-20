@@ -1,0 +1,309 @@
+
+/* ================================= */
+/* 1. GENERAL PAGE STYLING */
+/* ================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    margin: 0;
+}
+
+
+/* ================================= */
+/* 2. NAVIGATION BAR */
+/* ================================= */
+
+.navbar {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* ================================= */
+/* 3. BUTTONS */
+/* ================================= */
+
+button,
+.hero-button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+.hero-button:hover {
+    background-color: navy;
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+/* ================================= */
+/* 4. HERO SECTION */
+/* ================================= */
+
+.hero {
+    background-color: #dce8ff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: darkblue;
+    font-size: 32px;
+}
+
+
+/* ================================= */
+/* 5. GENERAL SECTIONS */
+/* ================================= */
+
+.section {
+    padding: 40px 7%;
+}
+
+.section h2 {
+    color: darkblue;
+}
+
+
+/* ================================= */
+/* 6. SEARCH AND FILTER */
+/* ================================= */
+
+#searchInput,
+#categoryFilter {
+    padding: 12px;
+    margin: 10px 5px 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+/* ================================= */
+/* 7. COURSE CARDS */
+/* ================================= */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    color: darkblue;
+}
+
+.course-card p {
+    line-height: 1.5;
+}
+
+.course-card button {
+    margin: 5px 3px 0 0;
+}
+
+.course-details {
+    background-color: #e4f0ff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* ================================= */
+/* 8. LEARNING LIST */
+/* ================================= */
+
+#learningListItems {
+    padding-left: 20px;
+}
+
+#learningListItems li {
+    margin: 12px 0;
+}
+
+#learningListItems button {
+    margin-left: 10px;
+}
+
+
+/* ================================= */
+/* 9. REGISTRATION FORM */
+/* ================================= */
+
+#registrationForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+#registrationForm label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#registrationForm input,
+#registrationForm select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+small {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
+
+#registrationMessage {
+    font-weight: bold;
+}
+
+
+/* ================================= */
+/* 10. FOOTER */
+/* ================================= */
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* ================================= */
+/* 11. DARK MODE */
+/* ================================= */
+
+body.dark-mode {
+    background-color: #171717;
+    color: white;
+}
+
+body.dark-mode .hero {
+    background-color: #26364f;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .section h2 {
+    color: #9dbdff;
+}
+
+body.dark-mode .course-card,
+body.dark-mode #registrationForm {
+    background-color: #292929;
+    color: white;
+}
+
+body.dark-mode .course-card h3 {
+    color: #9dbdff;
+}
+
+body.dark-mode .course-details {
+    background-color: #26364f;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #333;
+    color: white;
+    border-color: #777;
+}
+
+
+/* ================================= */
+/* 12. RESPONSIVE DESIGN */
+/* ================================= */
+
+@media (max-width: 800px) {
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-button {
+        display: inline-block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.show-menu {
+        display: flex;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+}
